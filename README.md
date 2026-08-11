@@ -4,7 +4,6 @@
 
 ### API RESTful para gerenciamento de finanças pessoais
 
-*Segura, multiusuário e documentada, construída com Java e Spring Boot*
 
 <br>
 
@@ -29,14 +28,15 @@
 
 O **FinTrack** permite que cada usuário gerencie suas próprias receitas, despesas e categorias de forma segura, com autenticação via **JWT** e isolamento dos dados financeiros entre usuários.
 
-> Este repositório representa a evolução de uma aplicação desktop desenvolvida inicialmente com **JavaFX + JDBC** para uma arquitetura de back-end baseada em **Spring Boot, Spring Data JPA e Spring Security**.
+> O **FinTrack** nasceu como uma aplicação de **console em Java**, evoluiu para uma aplicação desktop com **JavaFX + JDBC** e, nesta versão, foi transformado em uma **API RESTful** utilizando **Spring Boot, Spring Data JPA e Spring Security**.
 
 > 📚 Projeto desenvolvido para fins de estudo e portfólio, aplicando conceitos de arquitetura em camadas, segurança e boas práticas de API REST.
 
 ```mermaid
 graph LR
-    A["🖥️ JavaFX + JDBC<br/>Aplicação Desktop"] -->|Evolução| B["🚀 Spring Boot API<br/>REST + JPA + JWT"]
-    B --> C["🌐 Clientes<br/>Web, Mobile, Postman"]
+    A["⌨️ Console<br/>Java"] -->|Evolução| B["🖥️ Desktop<br/>JavaFX + JDBC"]
+    B -->|Evolução| C["🚀 API RESTful<br/>Spring Boot + JPA + JWT"]
+    C --> D["🌐 Clientes<br/>Web, Mobile, Postman"]
 ```
 
 ---
@@ -567,14 +567,29 @@ mvn test
 
 ## 🔄 Evolução do projeto
 
+O FinTrack foi desenvolvido de forma incremental, passando por diferentes arquiteturas e tecnologias ao longo de sua evolução:
+
 ```mermaid
 timeline
     title Evolução do FinTrack
+    Versão Console : Java
     Versão Desktop : JavaFX + JDBC
-    Versão API : Spring Boot + REST + JPA/Hibernate + MySQL + JWT
+    Versão API RESTful : Spring Boot + REST + JPA/Hibernate + MySQL + JWT
 ```
 
-O FinTrack começou como uma aplicação desktop construída com **JavaFX e JDBC** e evoluiu para uma API RESTful com uma arquitetura voltada à separação de responsabilidades, segurança e integração com diferentes tipos de clientes.
+### ⌨️ Versão Console
+
+O projeto começou como uma aplicação de **console em Java**, concentrando as funcionalidades fundamentais para o gerenciamento de finanças pessoais e a aplicação de conceitos de programação orientada a objetos.
+
+### 🖥️ Versão Desktop
+
+Na etapa seguinte, o FinTrack evoluiu para uma aplicação desktop utilizando **JavaFX + JDBC**, incorporando interface gráfica e persistência dos dados em banco de dados.
+
+### 🚀 Versão API RESTful
+
+Na versão atual, a lógica de negócio e a persistência foram transferidas para uma **API RESTful com Spring Boot**, utilizando **Spring Data JPA/Hibernate, MySQL, Spring Security e JWT**.
+
+Essa evolução permitiu separar a interface da lógica de negócio, implementar autenticação e autorização por usuário e preparar o sistema para integração com diferentes clientes, como aplicações **web e mobile**.
 
 ---
 
@@ -592,7 +607,7 @@ O FinTrack começou como uma aplicação desktop construída com **JavaFX e JDBC
 
 ## 🤝 Contribuindo
 
-Este é um projeto de estudo, mas sugestões são bem-vindas! Sinta-se à vontade para abrir uma [issue](https://github.com/anaflaviabitu/fintrack-api/issues) ou enviar um pull request.
+Este é um projeto de estudo, mas sugestões são bem-vindas! Sinta-se à vontade para abrir uma issue ou enviar um pull request.
 
 ---
 
@@ -604,7 +619,7 @@ Este é um projeto de estudo, mas sugestões são bem-vindas! Sinta-se à vontad
 
 Projeto desenvolvido para estudo e aplicação prática de desenvolvimento back-end com Java e Spring Boot.
 
-**Repositório:** https://github.com/anaflaviabitu/fintrack-api  
-**GitHub:** [@anaflaviabitu](https://github.com/anaflaviabitu)
+**Repositório:** `github.com/anaflaviabitu/fintrack-api`  
+**GitHub:** `@anaflaviabitu`
 
 </div>
