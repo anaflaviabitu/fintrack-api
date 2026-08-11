@@ -1,10 +1,10 @@
 <div align="center">
 
-# 💰 FinTrack API
+# FinTrack API
 
 ### API RESTful para gerenciamento de finanças pessoais
 
-*Segura, multiusuário e documentada — construída com Java e Spring Boot*
+*Segura, multiusuário e documentada, construída com Java e Spring Boot*
 
 <br>
 
